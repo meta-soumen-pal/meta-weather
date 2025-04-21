@@ -106,6 +106,7 @@ span{
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #bg-lines{
@@ -157,6 +158,7 @@ span{
 
 #home-page{
     width: 100%;
+    position: relative;
     height: 110vh;
     overflow: hidden;
     
@@ -175,8 +177,8 @@ span{
     top: 20%;
     z-index: 1;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #homepage-buttons{
@@ -355,7 +357,7 @@ span{
 
 .screenshot-image{
     height: 100%;
-    width: 50%;
+    /* width: 50%; */
     position: relative;
     top: 0;
     right: 0;
@@ -537,12 +539,122 @@ span{
 
 
 @media (width <= 1250px) {
+
+    #navbar{
+        padding: 10px 10px;
+    }
     #nav-links{
         display: none;
     }
     #nav-icons{
         display: none;
     }
+    #bg-lines{
+        height: 400%;
+    }
+    
+    #home-page {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #homepage-body{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px;
+        flex-direction: column-reverse;
+        top: 5%;
+        justify-content: flex-start;
+    }
+    
+    #homepage-phone{
+        width: 350px;
+    }
+    #features-page, #screenshots-page, #reviews-page #download-page {
+        padding: 0;
+    }
+    #features-body{
+        flex-wrap: wrap;
+    }
+
+    #features-footer-middle{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+    
+    
+    }
+#d1{
+    
+    width: 15%;
+    padding-top:20px ;
+    transform: skewY(6deg);
+    z-index: 0;
+    margin-right: 20%;
+   
+
+}
+#d2{
+    width: 20%;
+    transform: skewY(2deg);
+    margin-right: 40%;
+    position: absolute;
+    z-index: 9;
+   
+}
+#d3{
+    width: 30%;
+    position: absolute;
+
+    top: -30px;
+    z-index: 10;
+    transform: scale(1);
+   
+
+}
+#d4{
+
+    width: 20%;
+    transform: skewY(-2deg);
+    margin-left:  40%;
+    position: absolute;
+    z-index: 9;
+    
+
+}
+#d5{
+    width: 15%;
+    /* height: 350px; */
+    /* padding-top:10% ; */
+    transform: skewY(-6deg);
+    z-index: -1;
+    margin-left: 20%;
+    
+}
+#screenshots-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reviews-page{
+    padding: 0px;
+}
+
+#sunny{
+    padding: 0px;
+}
+
+
   }
   
   
